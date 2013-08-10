@@ -1,7 +1,3 @@
 baseurl: /siweiho.github.com
-permalink: /posts/:title
-rdiscount:
-  extensions: [smart]
-
 name: Siwei He
 description: A fantastic blog that is fantastic.
