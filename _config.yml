@@ -1,9 +1,4 @@
 baseurl: /siweiho.github.com
-pygments: true
-permalink: /posts/:title
-rdiscount:
-  extensions: [smart]
-
 name: Siwei He
 url: http://siweiho.github.com
 github: SiweiHo
