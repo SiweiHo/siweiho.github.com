@@ -1,4 +1,3 @@
-markdown: rdiscount
 pygments: true
 permalink: /posts/:title
 rdiscount:
@@ -6,6 +5,6 @@ rdiscount:
 
 name: Siwei He
 url: http://siweiho.github.com
-description: A fantastic blog that is fantastic.
 github: SiweiHo
+gravatar_url: https://raw.github.com/SiweiHo/siweiho.github.com/master/apple-touch-icon.png
 
