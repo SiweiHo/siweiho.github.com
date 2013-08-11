@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>
-    {% if page.title %}
-      {{ page.title }} &ndash;
-    {% endif %}
-    {{ site.name }}
+    
+      right &ndash;
+    
+    Siwei He
   </title>
 
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="description" content="{{ site.description }}" />
+  <meta name="author" content="Siwei He" />
+  <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
@@ -30,13 +30,13 @@
 <body>
   <section class="sidebar">
     <a href="/">
-      <img src="{{ site.gravatar_url }}?s=150" height="50" width="50" class="avatar" />
+      <img src="https://raw.github.com/SiweiHo/siweiho.github.com/master/apple-touch-icon.png?s=150" height="50" width="50" class="avatar" />
     </a>
 
     <section class="name">
       <a href="/">
-        <span id="fname">{{ site.name|split:' '|first }}</span>
-        <span id="lname">{{ site.name|split:' '|last }}</span>
+        <span id="fname">Siwei</span>
+        <span id="lname">He</span>
       </a>
     </section>   
 
@@ -46,19 +46,43 @@
         <li><a href="/about.html">ABOUT ME</a></li>        
 	<li><a href="/publish.html">PUBLICATIONS</a></li>
 	<li><a href="/research.html">RESEARCH</a></li>
-	<li><a href="/404.html">CODES</a></li>
 	<li><a href="/404.html">BLOG</a></li>
 	<li><a href="/404.html">LINKS</a></li>
       </ul>
     </section>
     
     <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><i class="icon icon-github"></i></a>
+      <a href="https://github.com/SiweiHo" target="_blank"><i class="icon icon-github"></i></a>
       <a href="Mailto:hesiweide@163.com"><i class="icon icon-envelope-alt"></i></a>
     </section>
   </section>
 
-  {{ content }}
+  <section class="content">
+  <h1>
+    <a href="/posts/right">right</a>
+  </h1>
+
+  <section class="byline">
+    December 22, 2012
+  </section>
+
+  <h1 id='test'>Test</h1>
+
+<h3 id='another_headfile'>Another headfile</h3>
+
+<p>this is a test file for markdown.</p>
+<hr />
+<p>Comments:</p>
+
+  <!-- TODO: bio here -->
+  <section class="meta">
+    <h3>Discussion</h3>
+    <section class="copy">
+        <img src="https://raw.github.com/SiweiHo/siweiho.github.com/master/apple-touch-icon.png?s=142" height="30" width="30" />
+    </section>
+  </section>
+</section>
+
 </body>
 
 </html>

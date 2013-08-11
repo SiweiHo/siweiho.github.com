@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>
-    {% if page.title %}
-      {{ page.title }} &ndash;
-    {% endif %}
-    {{ site.name }}
+    
+      Left &ndash;
+    
+    Siwei He
   </title>
 
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="description" content="{{ site.description }}" />
+  <meta name="author" content="Siwei He" />
+  <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
@@ -30,13 +30,13 @@
 <body>
   <section class="sidebar">
     <a href="/">
-      <img src="{{ site.gravatar_url }}?s=150" height="50" width="50" class="avatar" />
+      <img src="https://raw.github.com/SiweiHo/siweiho.github.com/master/apple-touch-icon.png?s=150" height="50" width="50" class="avatar" />
     </a>
 
     <section class="name">
       <a href="/">
-        <span id="fname">{{ site.name|split:' '|first }}</span>
-        <span id="lname">{{ site.name|split:' '|last }}</span>
+        <span id="fname">Siwei</span>
+        <span id="lname">He</span>
       </a>
     </section>   
 
@@ -46,19 +46,45 @@
         <li><a href="/about.html">ABOUT ME</a></li>        
 	<li><a href="/publish.html">PUBLICATIONS</a></li>
 	<li><a href="/research.html">RESEARCH</a></li>
-	<li><a href="/404.html">CODES</a></li>
 	<li><a href="/404.html">BLOG</a></li>
 	<li><a href="/404.html">LINKS</a></li>
       </ul>
     </section>
     
     <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><i class="icon icon-github"></i></a>
+      <a href="https://github.com/SiweiHo" target="_blank"><i class="icon icon-github"></i></a>
       <a href="Mailto:hesiweide@163.com"><i class="icon icon-envelope-alt"></i></a>
     </section>
   </section>
 
-  {{ content }}
+  <section class="content">
+  <h1>
+    <a href="/posts/left">Left</a>
+  </h1>
+
+  <section class="byline">
+    December 12, 2012
+  </section>
+
+  <p>Left is a clean, whitespace-happy layout for <a href='https://github.com/mojombo/jekyll'>Jekyll</a>.</p>
+
+<p>This is designed to be an easy layout to modify for your own blog. It was extracted from <a href='http://zachholman.com'>zachholman.com</a>, which means it was battle-hardened from years of posting serious blog posts about emoji and swear words.</p>
+
+<p>You&#8217;re actually reading an example post right now. See how cool it is? Oh, be quiet, you&#8217;re making me blush.</p>
+<hr />
+<p>You&#8217;ll want to <a href='https://github.com/holman/left#readme'>get the code</a> and read the README to learn how to install and set up Left for your own purposes.</p>
+
+<p>If you have any questions, follow and ping me on Twitter- I&#8217;m <a href='https://twitter.com/holman'>@holman</a>.</p>
+
+  <!-- TODO: bio here -->
+  <section class="meta">
+    <h3>Discussion</h3>
+    <section class="copy">
+        <img src="https://raw.github.com/SiweiHo/siweiho.github.com/master/apple-touch-icon.png?s=142" height="30" width="30" />
+    </section>
+  </section>
+</section>
+
 </body>
 
 </html>

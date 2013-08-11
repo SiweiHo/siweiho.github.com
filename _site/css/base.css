@@ -11,7 +11,7 @@ a {
   position: fixed;
   left: 15px;
   top: 15px;
-  width: 80px;
+  width: 90px;
   font-family: Helvetica, sans-serif; }
   .sidebar a {
     text-decoration: none; }
@@ -24,11 +24,12 @@ a {
     border-radius: 5px; }
   .sidebar .name {
     text-transform: uppercase;
-    margin: 10px 0 20px 0; }
+	text-align: right;
+    margin: 0 22px 20px 0; }
     .sidebar .name #fname {
       padding-left: 1px;
       font-size: 23px;
-      letter-spacing: 5px;
+      letter-spacing: 1px;
       color: black; }
     .sidebar .name #lname {
       font-size: 17px;
@@ -43,7 +44,8 @@ a {
   .sidebar .meta {
     margin-left: 4px; }
   .sidebar .meta .icon {
-    margin-right: 6px; }
+    margin-right: 5px; 
+	font-size: 24px;}
   .sidebar .sections {
     margin: 15px 0 0 0; }
     .sidebar .sections a {
@@ -53,7 +55,8 @@ a {
       font-size: 12px;
       display: block; }
       .sidebar .sections a:hover {
-        color: #227ce8; }
+        color: white; 
+		background-color: red; }
     .sidebar .sections ul {
       margin: 0;
       padding: 0; }
@@ -63,7 +66,7 @@ a {
 
 .content {
   max-width: 650px;
-  margin-left: 110px;
+  margin-left: 150px;
   margin-right: 20px;
   margin-bottom: 50px; }
   .content h1 {
