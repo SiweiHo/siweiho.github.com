@@ -1,3 +1,4 @@
+baseurl: /siweiho.github.com
 pygments: true
 permalink: /posts/:title
 rdiscount:
