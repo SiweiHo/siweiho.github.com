@@ -4,7 +4,7 @@
  <title>Siwei He</title>
  <link href="http://siweiho.github.com/atom.xml" rel="self"/>
  <link href="http://siweiho.github.com/"/>
- <updated>2013-08-12T18:08:41+08:00</updated>
+ <updated>2013-08-12T22:06:05+08:00</updated>
  <id>http://siweiho.github.com</id>
  <author>
    <name>Siwei He</name>
@@ -12,33 +12,29 @@
  
  
  <entry>
-   <title>right</title>
-   <link href="http://siweiho.github.com/posts/right"/>
-   <updated>2012-12-22T00:00:00+08:00</updated>
-   <id>http://siweiho.github.com/posts/right</id>
-   <content type="html">&lt;h1 id='test'&gt;Test&lt;/h1&gt;
+   <title>First</title>
+   <link href="http://siweiho.github.com/posts/Test"/>
+   <updated>2013-08-12T00:00:00+08:00</updated>
+   <id>http://siweiho.github.com/posts/Test</id>
+   <content type="html">&lt;p&gt;This is the first blog that I published in this space.&lt;/p&gt;
 
-&lt;h3 id='another_headfile'&gt;Another headfile&lt;/h3&gt;
+&lt;p&gt;Actually, I have another blog on Netease, which has run since 2010. In that blog, I share my experience on research, life, and also reprint some article that I think good.&lt;/p&gt;
 
-&lt;p&gt;this is a test file for markdown.&lt;/p&gt;
+&lt;p&gt;I write this blog mainly for learning the new script, that is &lt;a href='http://daringfireball.net/projects/markdown/'&gt;markdown&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;First, let me try how to insert a picture on blog.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/pic01.jpg' alt='This is a MATLAB plot from MIT open course' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A MATLAB plot of the Basin of Attraction for a function. (Image by Yossi Farjoun.)&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Second, I want to try the function of highlighting source codes&lt;/strong&gt;. For example, the followings are some MATLAB codes&lt;/p&gt;
+
+&lt;p&gt;This failed!!&lt;/p&gt;
+
+&lt;p&gt;OK, this is the end!&lt;/p&gt;
 &lt;hr /&gt;
-&lt;p&gt;Comments:&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Left</title>
-   <link href="http://siweiho.github.com/posts/left"/>
-   <updated>2012-12-12T00:00:00+08:00</updated>
-   <id>http://siweiho.github.com/posts/left</id>
-   <content type="html">&lt;p&gt;Left is a clean, whitespace-happy layout for &lt;a href='https://github.com/mojombo/jekyll'&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is designed to be an easy layout to modify for your own blog. It was extracted from &lt;a href='http://zachholman.com'&gt;zachholman.com&lt;/a&gt;, which means it was battle-hardened from years of posting serious blog posts about emoji and swear words.&lt;/p&gt;
-
-&lt;p&gt;You&amp;#8217;re actually reading an example post right now. See how cool it is? Oh, be quiet, you&amp;#8217;re making me blush.&lt;/p&gt;
-&lt;hr /&gt;
-&lt;p&gt;You&amp;#8217;ll want to &lt;a href='https://github.com/holman/left#readme'&gt;get the code&lt;/a&gt; and read the README to learn how to install and set up Left for your own purposes.&lt;/p&gt;
-
-&lt;p&gt;If you have any questions, follow and ping me on Twitter- I&amp;#8217;m &lt;a href='https://twitter.com/holman'&gt;@holman&lt;/a&gt;.&lt;/p&gt;</content>
+&lt;p&gt;I will publish all blogs on Linux platform.&lt;/p&gt;</content>
  </entry>
  
  
