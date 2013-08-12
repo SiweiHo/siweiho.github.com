@@ -4,7 +4,7 @@
  <title>Siwei He</title>
  <link href="http://siweiho.github.com/atom.xml" rel="self"/>
  <link href="http://siweiho.github.com/"/>
- <updated>2013-08-12T22:06:05+08:00</updated>
+ <updated>2013-08-12T23:43:28+08:00</updated>
  <id>http://siweiho.github.com</id>
  <author>
    <name>Siwei He</name>
@@ -24,13 +24,15 @@
 
 &lt;p&gt;&lt;strong&gt;First, let me try how to insert a picture on blog.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src='/images/pic01.jpg' alt='This is a MATLAB plot from MIT open course' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt='This is a MATLAB plot from MIT open course' src='/images/pic01.jpg' /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;A MATLAB plot of the Basin of Attraction for a function. (Image by Yossi Farjoun.)&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Second, I want to try the function of highlighting source codes&lt;/strong&gt;. For example, the followings are some MATLAB codes&lt;/p&gt;
 
 &lt;p&gt;This failed!!&lt;/p&gt;
+
+&lt;p&gt;Who can tell me the Program language that markdown can recognise? Itis would be very nice!&lt;/p&gt;
 
 &lt;p&gt;OK, this is the end!&lt;/p&gt;
 &lt;hr /&gt;

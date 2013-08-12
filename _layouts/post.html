@@ -7,12 +7,13 @@ layout: layout
     <a href="{{ page.url }}">{{ page.title }}</a>
   </h1>
 
-  <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }},  Tags: {{ page.tags}}
-  </section>
-
   {{ content }}
-
+  
+  <section class="byline">
+	<p>Published by <a href="{{ site.url }}">{{ site.name }}</a> at {{ page.date | date: "%B %e, %Y" }}</p>
+	<p>In categories {{ page.category }}, tagged with {{ page.tags}}.</p>
+  </section>
+  
   <!-- TODO: bio here -->
     <div id="disqus_thread"></div>
     <script type="text/javascript">

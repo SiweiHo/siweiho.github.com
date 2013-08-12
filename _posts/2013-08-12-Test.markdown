@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First
-category: posts
+category: technique
 tags: [test; highlight; picture]
 ---
 

@@ -150,8 +150,9 @@ a {
     margin-bottom: 17px;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
     padding-left: 0px;
-    font-size: 17px;
-    color: #777; }
+    font-size: 7px;
+    color: #777; 
+	text-align: right;}
   .content .aside {
     background-color: #eeeeee;
     padding: 14px;
