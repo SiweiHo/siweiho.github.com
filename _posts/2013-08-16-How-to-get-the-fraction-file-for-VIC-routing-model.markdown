@@ -1,6 +1,6 @@
 ---
 layout: post
-title: how to get the fraction file for VIC routing model
+title: How to get the fraction file for VIC routing model
 category: technique
 tags: [ArcGis; routing model; VIC; fraction file]
 ---
