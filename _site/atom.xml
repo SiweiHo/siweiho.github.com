@@ -4,7 +4,7 @@
  <title>Siwei He</title>
  <link href="http://siweiho.github.com/atom.xml" rel="self"/>
  <link href="http://siweiho.github.com/"/>
- <updated>2013-08-12T23:43:28+08:00</updated>
+ <updated>2013-08-16T19:59:41+08:00</updated>
  <id>http://siweiho.github.com</id>
  <author>
    <name>Siwei He</name>
@@ -12,10 +12,73 @@
  
  
  <entry>
+   <title>how to get the fraction file for VIC routing model</title>
+   <link href="http://siweiho.github.com/posts/How-to-get-the-fraction-file-for-VIC-routing-model"/>
+   <updated>2013-08-16T00:00:00+08:00</updated>
+   <id>http://siweiho.github.com/posts/How-to-get-the-fraction-file-for-VIC-routing-model</id>
+   <content type="html">&lt;p&gt;At first, you should have a boundary file (&lt;em&gt;hhup.shp&lt;/em&gt; in this example) and a gridding file (&lt;em&gt;Raster_hhup_grid.shp&lt;/em&gt; in this example). In the attribute table of gridding file, perimeter and area field should be contained.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTICE:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The grid file should be converted from a raster file, but not from fishnet or other file.&lt;/li&gt;
+
+&lt;li&gt;the coordinate system should be Projection Coordinate System, so you can get the area and perimeter of every gird.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic1.jpg' alt='This is picture1' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1, erasing&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this step, the &lt;em&gt;erase&lt;/em&gt; command was used, and the corresponding inputs and output as following figure.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic2.jpg' alt='This is picture2' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2 recalculating&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Adding a new field in the attribute table of &lt;em&gt;hhup_grid_Erase&lt;/em&gt; and calculating the area again.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic3.jpg' alt='This is picture3' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3, joining&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this step, the &lt;em&gt;spatial join&lt;/em&gt; command was used. Choosing &lt;em&gt;Join operation&lt;/em&gt; as &lt;strong&gt;JOIN_ONE_TO_ONE&lt;/strong&gt;, and &lt;em&gt;match option&lt;/em&gt; as &lt;strong&gt;CONTAINS&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic4.jpg' alt='This is picture4' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, in the attribute table of output feature class, that is &lt;em&gt;hhup_grid_SpatialJoin4&lt;/em&gt;, field &lt;em&gt;area_12&lt;/em&gt; is the area that was not included in the river boundary for every grid.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic5.jpg' alt='This is picture5' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4, turning to raster&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Using the command &lt;em&gt;Feature to raster&lt;/em&gt;, and choosing &lt;em&gt;Field&lt;/em&gt; as &lt;strong&gt;area_12&lt;/strong&gt;, &lt;strong&gt;area&lt;/strong&gt;, respectively. The output raster was named as &lt;em&gt;hhup_frac&lt;/em&gt; and &lt;em&gt;hhup_frac_bas&lt;/em&gt; successively.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic6.jpg' alt='This is picture6' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Following are the results.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic7.jpg' alt='This is picture7' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5, raster calculating&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;By &lt;em&gt;Spatial Analyst/Raster Calculator&lt;/em&gt;, the area percentage of every grid can be obtained.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic8.jpg' alt='This is picture8' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 6, outputting&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src='/images/20130816_pic9.jpg' alt='This is picture9' /&gt;&lt;/p&gt;
+
+&lt;p&gt;At this, you can get the fraction file that routing model of VIC asked for.&lt;/p&gt;
+&lt;hr /&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>First</title>
-   <link href="http://siweiho.github.com/posts/Test"/>
+   <link href="http://siweiho.github.com/posts/First"/>
    <updated>2013-08-12T00:00:00+08:00</updated>
-   <id>http://siweiho.github.com/posts/Test</id>
+   <id>http://siweiho.github.com/posts/First</id>
    <content type="html">&lt;p&gt;This is the first blog that I published in this space.&lt;/p&gt;
 
 &lt;p&gt;Actually, I have another blog on Netease, which has run since 2010. In that blog, I share my experience on research, life, and also reprint some article that I think good.&lt;/p&gt;
@@ -24,7 +87,7 @@
 
 &lt;p&gt;&lt;strong&gt;First, let me try how to insert a picture on blog.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='This is a MATLAB plot from MIT open course' src='/images/pic01.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src='/images/pic01.jpg' alt='This is a MATLAB plot from MIT open course' /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;A MATLAB plot of the Basin of Attraction for a function. (Image by Yossi Farjoun.)&lt;/em&gt;&lt;/p&gt;
 

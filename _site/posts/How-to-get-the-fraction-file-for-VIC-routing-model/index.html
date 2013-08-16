@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      how to get the fraction file for VIC routing model &ndash;
+    
+    Siwei He
+  </title>
+  <meta name="author" content="Siwei He" />
+  <meta name="description" content="Welcome to Siwei's Hompage" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/fontawesome.min.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/mobile.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/mobile.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+ <body>
+  <section class="sidebar">
+    <a href="/">
+      <img src="/apple-touch-icon.png?s=150" height="50" width="50" class="avatar" />
+    </a>
+
+    <section class="name">
+      <a href="/">
+        <span id="fname">Siwei</span>
+        <span id="lname">He</span>
+      </a>
+    </section>   
+
+    <section class="sections">
+      <ul>
+	<li><a href="/index.html">HOME</a></li>
+        <li><a href="/about.html">ABOUT ME</a></li>        
+	<li><a href="/publish.html">PUBLICATIONS</a></li>
+	<li><a href="/research.html">RESEARCH</a></li>
+	<li><a href="/Photos.html">PHOTOS</a></li>
+	<li><a href="/blog.html">BLOG</a></li>
+	<li><a href="/404.html">CODES</a></li>
+	<li><a href="/404.html">LINKS</a></li>
+      </ul>
+    </section>
+    
+    <section class="meta">
+      <a href="https://github.com/SiweiHo" target="_blank"><i class="icon icon-github"></i></a>
+      <a href="Mailto:hesiweide@163.com"><i class="icon icon-envelope-alt"></i></a>
+    </section>    
+  </section>  
+
+    <section class="sitemeter">
+        <!-- Site Meter -->
+      <script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51siwei">
+      </script>      
+      <noscript>
+      <a href="http://s51.sitemeter.com/stats.asp?site=s51siwei" target="_top">
+      <img src="http://s51.sitemeter.com/meter.asp?site=s51siwei" alt="Site Meter" border="2"/></a>
+      </noscript>      
+      <!-- Copyright (c)2009 Site Meter -->
+      </section>
+
+    <section class="content">
+  <h1>
+    <a href="/posts/How-to-get-the-fraction-file-for-VIC-routing-model">how to get the fraction file for VIC routing model</a>
+  </h1>
+  <hr width="650" align="left" color="blue" />
+
+  <p>At first, you should have a boundary file (<em>hhup.shp</em> in this example) and a gridding file (<em>Raster_hhup_grid.shp</em> in this example). In the attribute table of gridding file, perimeter and area field should be contained.</p>
+
+<p><strong>NOTICE:</strong></p>
+
+<ol>
+<li>The grid file should be converted from a raster file, but not from fishnet or other file.</li>
+
+<li>the coordinate system should be Projection Coordinate System, so you can get the area and perimeter of every gird.</li>
+</ol>
+
+<p><img src='/images/20130816_pic1.jpg' alt='This is picture1' /></p>
+
+<p><strong>Step 1, erasing</strong></p>
+
+<p>In this step, the <em>erase</em> command was used, and the corresponding inputs and output as following figure.</p>
+
+<p><img src='/images/20130816_pic2.jpg' alt='This is picture2' /></p>
+
+<p><strong>Step 2 recalculating</strong></p>
+
+<p>Adding a new field in the attribute table of <em>hhup_grid_Erase</em> and calculating the area again.</p>
+
+<p><img src='/images/20130816_pic3.jpg' alt='This is picture3' /></p>
+
+<p><strong>Step 3, joining</strong></p>
+
+<p>In this step, the <em>spatial join</em> command was used. Choosing <em>Join operation</em> as <strong>JOIN_ONE_TO_ONE</strong>, and <em>match option</em> as <strong>CONTAINS</strong>.</p>
+
+<p><img src='/images/20130816_pic4.jpg' alt='This is picture4' /></p>
+
+<p>Then, in the attribute table of output feature class, that is <em>hhup_grid_SpatialJoin4</em>, field <em>area_12</em> is the area that was not included in the river boundary for every grid.</p>
+
+<p><img src='/images/20130816_pic5.jpg' alt='This is picture5' /></p>
+
+<p><strong>Step 4, turning to raster</strong></p>
+
+<p>Using the command <em>Feature to raster</em>, and choosing <em>Field</em> as <strong>area_12</strong>, <strong>area</strong>, respectively. The output raster was named as <em>hhup_frac</em> and <em>hhup_frac_bas</em> successively.</p>
+
+<p><img src='/images/20130816_pic6.jpg' alt='This is picture6' /></p>
+
+<p>Following are the results.</p>
+
+<p><img src='/images/20130816_pic7.jpg' alt='This is picture7' /></p>
+
+<p><strong>Step 5, raster calculating</strong></p>
+
+<p>By <em>Spatial Analyst/Raster Calculator</em>, the area percentage of every grid can be obtained.</p>
+
+<p><img src='/images/20130816_pic8.jpg' alt='This is picture8' /></p>
+
+<p><strong>Step 6, outputting</strong></p>
+
+<p><img src='/images/20130816_pic9.jpg' alt='This is picture9' /></p>
+
+<p>At this, you can get the fraction file that routing model of VIC asked for.</p>
+<hr />
+  
+  <section class="byline">
+	<p>Published by <a href="http://siweiho.github.com">Siwei He</a> at August 16, 2013</p>
+	<p>In categories technique, tagged with ArcGis; routing model; VIC; fraction file.</p>
+  </section>
+  
+  <!-- TODO: bio here -->
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'siweihomepage'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+</section>
+
+
+
+</body>
+
+</html>

@@ -7,6 +7,13 @@ body {
 a {
   color: #227ce8; }
 
+.sitemeter {
+  position: fixed;
+  left: 0px;
+  top: 400px;
+  width: 90px;
+  font-family: Helvetica, sans-serif; }
+  
 .sidebar {
   position: fixed;
   left: 15px;
@@ -72,7 +79,7 @@ a {
   .content h1 {
     color: #333;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400; }
+    font-weight: 400;}
   .content h1 a {
     color: #111;
     text-decoration: none; }
@@ -125,10 +132,10 @@ a {
     max-width: 100%; }
   .content hr {
     border: 0;
-    height: 6px;
+    height: 5px;
     background-image: url("/images/hr.png");
     background-repeat: repeat-x;
-    margin: 2em 3em; }
+    margin: 2em 0em; }
   .content li {
     margin-bottom: 10px;
     line-height: 1.4em; }
@@ -168,16 +175,19 @@ a {
       margin: 0;
       padding: 0; }
     .content .listing li {
-      font-size: 13px;
+	  font-size: 18px;
       list-style: none;
       padding: 5px 3px;
       margin: 0;
       color: #777777;
       border-bottom: 1px solid #eee; }
     .content .listing li span {
-      float: right; }
+      float: right;
+	  font-size: 14px;
+	  font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;}
     .content .listing a {
-      text-decoration: none; }
+      text-decoration: none; 
+	  }
       .content .listing a:hover {
         text-decoration: underline; }
   .content .meta {

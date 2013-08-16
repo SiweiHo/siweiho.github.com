@@ -1,0 +1,35 @@
+---
+layout: post
+title: First
+category: technique
+tags: [test; highlight; picture]
+---
+
+This is the first blog that I published in this space.
+
+Actually, I have another blog on Netease, which has run since  2010. In that blog, 
+I share my experience on research, life, and also reprint some article that I think 
+good.
+
+I write this blog mainly for learning the new script, that is 
+[markdown](http://daringfireball.net/projects/markdown/).
+
+**First, let me try how to insert a picture on blog.**
+
+![This is a MATLAB plot from MIT open course](/images/pic01.jpg)
+
+*A MATLAB plot of the Basin of Attraction for a function. (Image by Yossi Farjoun.)*
+
+**Second, I want to try the function of highlighting source codes **. For example, the 
+followings are some MATLAB codes
+
+This failed!! 
+
+Who can tell me the Program language that markdown can recognise? Itis would be very 
+nice!
+
+OK, this is the end! 
+
+---
+
+I will publish all blogs on Linux platform.
