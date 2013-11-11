@@ -105,49 +105,49 @@
 <li>the coordinate system should be Projection Coordinate System, so you can get the area and perimeter of every gird.</li>
 </ol>
 
-<p><img alt='This is picture1' src='/images/20130816_pic1.jpg' /></p>
+<p><img src='/images/20130816_pic1.jpg' alt='This is picture1' /></p>
 
 <p><strong>Step 1, erasing</strong></p>
 
 <p>In this step, the <em>erase</em> command was used, and the corresponding inputs and output as following figure.</p>
 
-<p><img alt='This is picture2' src='/images/20130816_pic2.jpg' /></p>
+<p><img src='/images/20130816_pic2.jpg' alt='This is picture2' /></p>
 
 <p><strong>Step 2 recalculating</strong></p>
 
 <p>Adding a new field in the attribute table of <em>hhup_grid_Erase</em> and calculating the area again.</p>
 
-<p><img alt='This is picture3' src='/images/20130816_pic3.jpg' /></p>
+<p><img src='/images/20130816_pic3.jpg' alt='This is picture3' /></p>
 
 <p><strong>Step 3, joining</strong></p>
 
 <p>In this step, the <em>spatial join</em> command was used. Choosing <em>Join operation</em> as <strong>JOIN_ONE_TO_ONE</strong>, and <em>match option</em> as <strong>CONTAINS</strong>.</p>
 
-<p><img alt='This is picture4' src='/images/20130816_pic4.jpg' /></p>
+<p><img src='/images/20130816_pic4.jpg' alt='This is picture4' /></p>
 
 <p>Then, in the attribute table of output feature class, that is <em>hhup_grid_SpatialJoin4</em>, field <em>area_12</em> is the area that was not included in the river boundary for every grid.</p>
 
-<p><img alt='This is picture5' src='/images/20130816_pic5.jpg' /></p>
+<p><img src='/images/20130816_pic5.jpg' alt='This is picture5' /></p>
 
 <p><strong>Step 4, turning to raster</strong></p>
 
 <p>Using the command <em>Feature to raster</em>, and choosing <em>Field</em> as <strong>area_12</strong>, <strong>area</strong>, respectively. The output raster was named as <em>hhup_frac</em> and <em>hhup_frac_bas</em> successively.</p>
 
-<p><img alt='This is picture6' src='/images/20130816_pic6.jpg' /></p>
+<p><img src='/images/20130816_pic6.jpg' alt='This is picture6' /></p>
 
 <p>Following are the results.</p>
 
-<p><img alt='This is picture7' src='/images/20130816_pic7.jpg' /></p>
+<p><img src='/images/20130816_pic7.jpg' alt='This is picture7' /></p>
 
 <p><strong>Step 5, raster calculating</strong></p>
 
 <p>By <em>Spatial Analyst/Raster Calculator</em>, the area percentage of every grid can be obtained.</p>
 
-<p><img alt='This is picture8' src='/images/20130816_pic8.jpg' /></p>
+<p><img src='/images/20130816_pic8.jpg' alt='This is picture8' /></p>
 
 <p><strong>Step 6, outputting</strong></p>
 
-<p><img alt='This is picture9' src='/images/20130816_pic9.jpg' /></p>
+<p><img src='/images/20130816_pic9.jpg' alt='This is picture9' /></p>
 
 <p>At this, you can get the fraction file that routing model of VIC asked for.</p>
 <hr />
