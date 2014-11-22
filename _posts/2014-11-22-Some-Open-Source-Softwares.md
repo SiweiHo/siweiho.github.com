@@ -27,6 +27,7 @@ Latex is the traditional words processing program. It is a better choice
 for alternative of OFFICE.
 
 **VIM**
+
 It is said that VIM is the most powerful editor in the world. I think this
 maybe true. I am a newcomer for VIM.
 
