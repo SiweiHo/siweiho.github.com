@@ -2,7 +2,7 @@
 layout: post
 title: Use of NetCDF on Linux
 category: technique
-tags: [test; highlight; picture]
+tags: [NetCDF; Linux]
 ---
 **1. Install**  
 1.1 Download program from <ftp://ftp.unidata.ucar.edu/pub/netcdf/>.  
