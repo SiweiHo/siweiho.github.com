@@ -8,15 +8,15 @@ a {
   color: #227ce8; }
 
 .sitemeter {
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
   left: 0px;
   top: 400px;
   width: 90px;
   font-family: Helvetica, sans-serif; }
   
 .sidebar {
-  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
   left: 15px;
   top: 15px;
   width: 90px;
