@@ -6,12 +6,11 @@ tags: [test; highlight; picture]
 ---
 **1. Install**  
 1.1 Download program from <ftp://ftp.unidata.ucar.edu/pub/netcdf/>.  
-The programs that I have downloaded are: 
-
-* hdf5-1.8.9.tar.gz
-* zlib-1.2.7.tar.gz
-* netcdf-4.3.2.tar.gz
-* netcdf-fortran-4.4.0.tar.gz
+The programs that I have downloaded are:   
+*hdf5-1.8.9.tar.gz*  
+*zlib-1.2.7.tar.gz*  
+*netcdf-4.3.2.tar.gz*    
+*netcdf-fortran-4.4.0.tar.gz*  
 
 1.2 Build and install zlib  
 `>> tar -zxvf zlib-1.2.7.tar.gz`  
@@ -55,13 +54,13 @@ If everything is okay, then you can call netcdf function in the fortran
 program. Actually, I think this is easier than above installation processes.
 A very generally way is copied from NetCDF-Fortran user guide 
 <https://www.unidata.ucar.edu/software/netcdf/docs/netcdf-f90.html>,   
-* NF90_CREATE ! create netCDF dataset: enter define mode ...  
-* NF90_DEF_DIM ! define dimensions: from name and length ...  
-* NF90_DEF_VAR ! define variables: from name, type, dims ...  
-* NF90_PUT_ATT ! assign attribute values ...  
-* NF90_ENDDEF ! end definitions: leave define mode ...  
-* NF90_PUT_VAR ! provide values for variable ...   
-* NF90_CLOSE ! close: save new netCDF dataset   
+*NF90_CREATE ! create netCDF dataset: enter define mode ...*  
+*NF90_DEF_DIM ! define dimensions: from name and length ...*  
+*NF90_DEF_VAR ! define variables: from name, type, dims ...*  
+*NF90_PUT_ATT ! assign attribute values ...*  
+*NF90_ENDDEF ! end definitions: leave define mode ...*  
+*NF90_PUT_VAR ! provide values for variable ...*   
+*NF90_CLOSE ! close: save new netCDF dataset*   
 
 **3. View**  
 I think view is important since we can check our results conveniently 
@@ -70,9 +69,9 @@ are available in the internet. However, I think HDFView
 <http://www.hdfgroup.org/products/java/hdfview/>
 is the most friendly and useful for new user. I have tried many times
 before I successfully installing it. Here are my experience,  
-* apt-get install hdfview (Fail)  
-* HDF-Java 2.11 Pre-Built Binary Distribution (Fail)   
-* HDF-Java 2.11 Source Code (Success)   
+*apt-get install hdfview (Fail)*  
+*HDF-Java 2.11 Pre-Built Binary Distribution (Fail)*   
+*HDF-Java 2.11 Source Code (Success)*   
 The details of the third method is given by web 
 <http://www.hdfgroup.org/products/java/release/downloadsrc.html>.
 However, I have to mention that you should install cmake and jave 
