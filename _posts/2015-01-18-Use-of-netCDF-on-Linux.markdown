@@ -11,39 +11,33 @@ The programs that I have downloaded are:
 *zlib-1.2.7.tar.gz*  
 *netcdf-4.3.2.tar.gz*    
 *netcdf-fortran-4.4.0.tar.gz*  
-
 1.2 Build and install zlib  
 `>> tar -zxvf zlib-1.2.7.tar.gz`  
 `>> cd zlib-1.2.7`   
 `>> ./configure --prefix=/usr/local`  
 `>> sudo make check install`  
-
 1.3 Build and install hdf5  
 `>> tar -zxvf hdf5-1.8.9.tar.gz`  
 `>> cd hdf5-1.8.9`  
 `>> CFLAGS=-O0 ./configure --with-zlib=/usr/local --prefix=/usr/local`
 (The CFLAGS=-O0 is only required if you get error without it)   
-`>>  sudo make check install`
-
+`>>  sudo make check install`  
 1.4 Build and install netcdf  
 `>> tar -zxvf netcdf-4.3.2.tar.gz`   
 `>> cd netcdf-4.3.2`   
 `>> CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib 
 ./configure --prefix=/usr/local`   
-`>> sudo make check install`
-
+`>> sudo make check install`  
 1.5 Set environmental variables   
 `ENV_VARIABLE=/usr/local`  
-`export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}`
-
+`export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}`  
 1.6 Build and install netcdf-fortran  
 `>> tar -zxvf netcdf-fortran-4.4.0.tar.gz`   
 `>> cd netcdf-fortran-4.4.0`   
 `>> CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib 
 ./configure --prefix=/usr/local`   
 `>> make check`   
-`>> sudo make install`  
-
+`>> sudo make install`    
 With above steps, I'm sure that you can use netcdf via fortran.
 Two screenshots,
 ![Screenshot for netCDF](/images/netcdf.png)
