@@ -6,9 +6,7 @@ tags: [test; highlight; picture]
 ---
 
 **1. Install**
-
 1.1 Download program from <ftp://ftp.unidata.ucar.edu/pub/netcdf/>.
-
 The programs that I have downloaded are: 
 
 * hdf5-1.8.9.tar.gz
