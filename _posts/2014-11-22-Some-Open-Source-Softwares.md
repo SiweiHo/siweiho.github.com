@@ -38,10 +38,8 @@ Soft Center
 *>> Terminator*  
 *>> Grass*  
 
-Command Line
+Command Line  
 `>> sudo apt-get install vim`  
- vimrc  
- set number   
 `>> sudo apt-get install build-essential`  
 `>> sudo apt-get install gfortran`  
 `>> sudo apt-get install gnuplot-x11`   
@@ -52,6 +50,18 @@ For QGIS
 `>> sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable`  
 `>> sudo apt-get update`  
 `>> sudo apt-get install qgis python-qgis qgis-plugin-grass`  
+
+ /etc/vim/vimrc  
+`set number` (Display line number)   
+`set nowrap` (Stop automatic wrap)  
+`set expandtab` (For automatic indentation)  
+`set shiftwidth=2` (For automatic indentation)  
+`set autoindent` (For automatic indentation)   
+`set smartindent` (For automatic indentation)  
+`set fileencodings=utf-8,gb2312,gbk,gb18030` (For Chinese messy code)  
+`set termencoding=utf-8` (For Chinese messy code)    
+`set encoding=prc` (For Chinese messy code)    
+
 
 .bashrc  
 export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;33m\]\u@\h\[\033[00m\]:\[\033[00;36m\]\W\[\033[00;33m\]\$ "
