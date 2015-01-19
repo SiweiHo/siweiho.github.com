@@ -1,32 +1,38 @@
 ---
 layout: post
-title: First
+title: Use of NetCDF on Linux
 category: technique
 tags: [test; highlight; picture]
 ---
 
 **1. Install**
-1.1 Download program from <ftp://ftp.unidata.ucar.edu/pub/netcdf/>
-The programs that I have downloaded are: 
+=========================
+..1. Download program from <ftp://ftp.unidata.ucar.edu/pub/netcdf/>.
+
+...The programs that I have downloaded are: 
+
 * hdf5-1.8.9.tar.gz
 * zlib-1.2.7.tar.gz
-* netcdf-4.3.2.tar.gz
-* netcdf-fortran-4.4.0.tar.gz
+... * netcdf-4.3.2.tar.gz
+... * netcdf-fortran-4.4.0.tar.gz
 
 1.2 Build and install zlib
-'>> tar -zxvf zlib-1.2.7.tar.gz'
-'>> cd zlib-1.2.7'
-'>> ./configure --prefix=/usr/local'
-'>> sudo make check install'
+
+`>> tar -zxvf zlib-1.2.7.tar.gz`
+`>> cd zlib-1.2.7`
+`>> ./configure --prefix=/usr/local`
+`>> sudo make check install`
 
 1.3 Build and install hdf5
-'>> tar -zxvf hdf5-1.8.9.tar.gz'
-'>> cd hdf5-1.8.9'
-'>> CFLAGS=-O0 ./configure --with-zlib=/usr/local --prefix=/usr/local'
+
+`>> tar -zxvf hdf5-1.8.9.tar.gz`
+`>> cd hdf5-1.8.9`
+`>> CFLAGS=-O0 ./configure --with-zlib=/usr/local --prefix=/usr/local`
 (The CFLAGS=-O0 is only required if you get error without it) 
-'>>  sudo make check install'
+`>>  sudo make check install`
 
 1.4 Build and install netcdf
+
 '>> tar -zxvf netcdf-4.3.2.tar.gz'
 '>> cd netcdf-4.3.2'
 '>> CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib 
@@ -34,10 +40,12 @@ The programs that I have downloaded are:
 '>> sudo make check install'
 
 1.5 Set environmental variables
+
 'ENV_VARIABLE=/usr/local'
 'export LD_LIBRARY_PATH=/usr/local/lib:${LD_LIBRARY_PATH}'
 
 1.6 Build and install netcdf-fortran
+
 '>> tar -zxvf netcdf-fortran-4.4.0.tar.gz'
 '>> cd netcdf-fortran-4.4.0'
 '>> CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib 
@@ -50,9 +58,8 @@ Two screenshots,
 ![Screenshot for netCDF](/images/netcdf.png)
 ![Screenshot for netCDF-Fortran](/images/netcdf-fortran.png)
 
-
-
 **2. Call NetCDF function**
+
 If everything is okay, then you can call netcdf function in the fortran 
 program. Actually, I think this is easier than above installation processes.
 A very generally way is copied from NetCDF-Fortran user guide 
@@ -67,6 +74,7 @@ A very generally way is copied from NetCDF-Fortran user guide
 * NF90_CLOSE ! close: save new netCDF dataset
 
 **3. View**
+
 I think view is important since we can check our results conveniently 
 if we can view them conveniently. Obviously, there are many programs 
 are available in the internet. However, I think HDFView 
@@ -93,7 +101,7 @@ and then type:
 '>> sudo make install'
 
 After successfully install, you can start it in command 
-line with: *hdfview.sh*
+line with: **hdfview.sh**
 
 ---
 
