@@ -31,4 +31,30 @@ for alternative of OFFICE.
 It is said that VIM is the most powerful editor in the world. I think this
 maybe true. I am a newcomer for VIM.
 
+**What I do After Installing Linux**
+
+Soft Center
+>> Dropbox
+>> Terminator
+>> Grass
+
+Command Line
+>> sudo apt-get install vim
+ vimrc
+ set number
+>> sudo apt-get install build-essential
+>> sudo apt-get install gfortran
+>> sudo apt-get install gnuplot-x11
+>> sudo apt-get install texlive-full
+
+For QGIS
+>> sudo apt-get install python-software-properties
+>> sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+>> sudo apt-get update
+>> sudo apt-get install qgis python-qgis qgis-plugin-grass
+
+.bashrc
+export PS1="${debian_chroot:+($debian_chroot)}\[\033[01;33m\]\u@\h\[\033[00m\]:\[\033[00;36m\]\W\[\033[00;33m\]\$ "
+
+
 ---
