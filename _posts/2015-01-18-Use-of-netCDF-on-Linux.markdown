@@ -6,21 +6,24 @@ tags: [test; highlight; picture]
 ---
 
 **1. Install**
-=========================
-..1. Download program from <ftp://ftp.unidata.ucar.edu/pub/netcdf/>.
 
-...The programs that I have downloaded are: 
+1.1 Download program from <ftp://ftp.unidata.ucar.edu/pub/netcdf/>.
+
+The programs that I have downloaded are: 
 
 * hdf5-1.8.9.tar.gz
 * zlib-1.2.7.tar.gz
-... * netcdf-4.3.2.tar.gz
-... * netcdf-fortran-4.4.0.tar.gz
+* netcdf-4.3.2.tar.gz
+* netcdf-fortran-4.4.0.tar.gz
 
 1.2 Build and install zlib
 
 `>> tar -zxvf zlib-1.2.7.tar.gz`
+
 `>> cd zlib-1.2.7`
+
 `>> ./configure --prefix=/usr/local`
+
 `>> sudo make check install`
 
 1.3 Build and install hdf5
