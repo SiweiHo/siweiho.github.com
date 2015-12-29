@@ -1,5 +1,5 @@
 #! /bin/sh
 git add .
-git commit -m "The new edition ..."
+git commit -am "The new edition ..."
 git push origin master
 
