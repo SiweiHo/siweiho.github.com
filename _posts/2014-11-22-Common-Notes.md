@@ -48,7 +48,7 @@ For QGIS
 `>> sudo apt-get update`  
 `>> sudo apt-get install qgis python-qgis qgis-plugin-grass`  
 
-For Python
+For Python  
 `>> sudo apt-get install python-matplotlib`  
 `>> sudo apt-get install python-tk`  
 `>> sudo apt-get install python-scipy`  
