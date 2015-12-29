@@ -34,7 +34,6 @@ Import as points:
 skip=0 columns=lon double precision, lat double precision, elev double precision cat=0`  
 Import as lines:  
 `v.in.lines --overwrite input=DAT_0001_0015_A1.csv output=Feb5_GPR_route fs=,`  
-
 The advantage of lines is that it is easy to manage since we have
 only one element in the .KML file. The advantage of points is that
 it is easy to extract DEM information from NED raster data since
