@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Commands on GRASS
+title: GPR data process with GRASS
 category: technique
 tags: [GRASS; Linux]
 ---
 
-I have some GPR data (.rad, .rd3, .cor) and here I just focus on .cor
+I have some GPR (Ground penetrating radar) data (.rad, .rd3, .cor) and here I just focus on .cor
 file since this file contains the location information of GPR route (trace).
 My aims are:
 1. Ddisplay GPR route in Google Earth (GE)

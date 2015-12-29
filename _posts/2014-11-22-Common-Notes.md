@@ -14,19 +14,19 @@ tags: [Open Source; Gnuplot; Grass Gis; Linux]
 <li> <a href="https://www.lyx.org/" target="_blank">LyX</a> </li>
 
 **Installing VTK**
-`sudo apt-get install cmake`
-`sudo apt-get install cmake-curses-gui`
-then, download VTK and VTKDATA
-`sudo apt-get install libpng-dev libjpeg-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev`
-`sudo apt-get install mesa-common-dev`
-`sudo apt-get install mesa-utils-extra libgl1-mesa-dev libglapi-mesa`
-`sudo apt-get install libxt-dev`
-`tar zxf VTK`
-`tar zxf VTKData`
-`cd VTK`
-`ccmake`
-`make`
-`sudo make install`
+`>> sudo apt-get install cmake`  
+`>> sudo apt-get install cmake-curses-gui`  
+then, download VTK and VTKDATA  
+`>> sudo apt-get install libpng-dev libjpeg-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev`  
+`>> sudo apt-get install mesa-common-dev`  
+`>> sudo apt-get install mesa-utils-extra libgl1-mesa-dev libglapi-mesa`  
+`>> sudo apt-get install libxt-dev`  
+`>> tar zxf VTK`  
+`>> tar zxf VTKData`  
+`>> cd VTK`  
+`>> ccmake`  
+`>> make`  
+`>> sudo make install`  
 
 **What I do After Installing Linux**
 
@@ -49,27 +49,10 @@ For QGIS
 `>> sudo apt-get install qgis python-qgis qgis-plugin-grass`  
 
 For Python
-'sudo apt-get install python-matplotlib'
-'sudo apt-get install python-tk'
-'sudo apt-get install python-scipy'
-'sudo apt-get install python-mpltoolkits.basemap'
-and how to Install netcdf-python
-I follow the instruction of web [http://unidata.github.io/netcdf4-python/]
-I have downloaded:
-*netCDF4-1.1.3.tar.gz*
-*Cython-0.21.2.tar.gz*
-*hdf5-1.8.14.tar.gz*
-
-I have installed Python (2.7.5) and numpy module (1.7.1)
-
-'sudo apt-get install python-dev'
-
-cd Cython
-'sudo python setup.py install'
-
-cd netCDF4
-'python setup.py build'
-'sudo python setup.py install'
+`>> sudo apt-get install python-matplotlib`  
+`>> sudo apt-get install python-tk`  
+`>> sudo apt-get install python-scipy`  
+`>> sudo apt-get install python-mpltoolkits.basemap`  
 
  /etc/vim/vimrc  
 `set number` (Display line number)   
