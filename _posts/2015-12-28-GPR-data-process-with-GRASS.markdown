@@ -16,7 +16,7 @@ Here are what I have done.
 
 **1. Converting .cor file to .csv file**  
 I finished this via Fortran program. The information I extrated are 
-latitude, longitude, and elevation.
+latitude and longitude.
 
 **2. Setting coordinate system**  
 Only with corret coordinate system, we can properly import routes into 
