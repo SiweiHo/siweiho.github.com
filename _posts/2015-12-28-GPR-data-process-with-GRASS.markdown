@@ -15,10 +15,12 @@ NED (National Elevation Data) via GRASS.
 Here are what I have done.
 
 **1. Converting .cor file to .csv file**
+
 I finished this via Fortran program. The information I extrated are 
 latitude, longitude, and elevation.
 
 **2. Setting coordinate system**
+
 Only with corret coordinate system, we can properly import routes into 
 GE. 
 2.1 Open a new GRASS session, and create a new location, for example
@@ -27,6 +29,7 @@ google_earth.
 WGS84: this is the unprojected latitude and longitude.
 
 **3. Import .csv file to GRASS**
+
 We already have the .csv file in the step 1. We have two choices here.
 Import as points or as lines.
 
@@ -43,6 +46,7 @@ it is easy to extract DEM information from NED raster data since
 we can get elevation via updating attribute table.
 
 **4. Export .KML file for GE**
+
 We already have the vectors of route, one for points and one for lines.
 I exported lines file to .KML file.
 `v.out.ogr input=Feb5_GPR_route@PERMANENT type=line dsn=Feb5_GPR_route.kml format=KML`
@@ -50,6 +54,7 @@ I exported lines file to .KML file.
 The we can open the .KML file through GE.
 
 **5. Extract elevation from NED data**
+
 I make this operation in another session, that is NED projection system.
 The consistence of coordinate system is very important since it would
 induce serious problem. I give all commands since it is easy to understand:
@@ -61,4 +66,6 @@ induce serious problem. I give all commands since it is easy to understand:
 `v.out.ascii input=test_pt@N42W107 output=test.csv fs=, columns=elev,dem`
 
 Now, we have the NED elevation in our new .csv file.
+
+---
 
